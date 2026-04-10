@@ -5,7 +5,9 @@ bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
-    bot.reply_to(message, "Assalom! Men eski tizimda ishlayapman.")
+    # Matnni o'zgartiramiz
+    text = "Assalomu alaykum, Diyorbek! 🔥\n\nBu xabar GitHub Actions orqali avtomat keldi. Tizim holati: ONLINE ✅"
+    bot.reply_to(message, text)
 
 print("Bot yoqildi...")
 bot.infinity_polling()
