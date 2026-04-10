@@ -2,7 +2,7 @@ name: Bot Deploy
 
 on:
   push:
-    branches: [ "diyorbek" ]
+    branches: [ "main" ]
 
 jobs:
   deploy:
