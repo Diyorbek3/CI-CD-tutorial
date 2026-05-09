@@ -6,6 +6,8 @@ on:
 
 jobs:
   deploy:
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v4
