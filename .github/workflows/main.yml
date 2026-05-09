@@ -8,7 +8,7 @@ jobs:
   deploy:
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: Build
